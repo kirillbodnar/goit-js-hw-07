@@ -33,9 +33,9 @@ function onGalleryElementClick(event) {
     return;
   }
 
-  const FullScreenImgUrl = `<img src=${event.target.dataset.source} alt=${event.target.alt}>`;
+  const fullScreenImgUrl = `<img src=${event.target.dataset.source} alt=${event.target.alt}>`;
 
-  const instance = basicLightbox.create(FullScreenImgUrl, {
+  const instance = basicLightbox.create(fullScreenImgUrl, {
     onShow: () => {
       window.addEventListener('keydown', onKeyboardCloseModal);
     },
